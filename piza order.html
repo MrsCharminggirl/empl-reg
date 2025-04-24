@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pizza Order Form</title>
+</head>
+<body>
+<fieldset>
+<legend>Pizza Order Form</legend>
+<form>
+<fieldset>
+<legend>Delivery Address</legend>
+            Full Name: <input type="text" name="fullname">                   
+           Street Address:<input type="text" name="address"style="text-align:right;"><br><p>
+            Phone: <input type="tel" name="phone">                         
+            Email: <input type="email" name="email"><br><p>
+            Password: <input type="password" name="password"><br><p>
+</fieldset>
+
+<fieldset>
+<legend>Payment Information</legend><p>
+            Card Type: 
+               <select name="cardtype">
+               <option>Visa</option>
+               <option>Mastercard</option>
+               <option>Discover</option>
+               </select>                                                          
+            Card Number: <input type="text" name="cardnumber"style="text-align:right;"><br><p>
+            Name on Card: <input type="text" name="nameoncard"><br><p>
+</fieldset>
+
+<fieldset>
+<legend>Customize Your Pizza</legend><p>
+            Pizza size: 
+              <select name="size">
+              <option selected>large</option>
+              <option>medium</option>
+              <option>small</option>
+              </select>                                                           Quantity: <input type="number" name="quantity"><br><p>
+            Spices: 
+              <input type="checkbox" name="spice" value="black">Black pepper
+              <input type="checkbox" name="spice" value="bell">Bell peppers
+              <input type="checkbox" name="spice" value="mayo">Mayonnaise<br><p>
+            Other Requirements:<br>
+              <textarea name="requirements"></textarea><br><p>
+            Meat: 
+              <input type="radio" name="meat" value="fish">Fish
+              <input type="radio" name="meat" value="cow">Cow
+              <input type="radio" name="meat" value="chicken">Chicken<br><p>
+</fieldset>
+
+<input type="reset" value="Clear Order">
+<input type="submit" value="Place Order">
+</form>
+</fieldset>
+</body>
+</html>
